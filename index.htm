@@ -9,7 +9,6 @@ rel="stylesheet" type="text/css">
 <META http-equiv="X-UA-Compatible" content="IE=edge">
 <META name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,user-scalable=1"><LINK 
 href="https://dailyreport.sjtu.edu.cn/market/dist/favicon.ico" 
-const urlParams = new URLSearchParams(window.location.search);
 rel="icon"><TITLE>预约成功</TITLE><LINK href="https://dailyreport.sjtu.edu.cn/market/dist/assets/css/chunk-2a18a011.79a13898.css" 
 rel="prefetch"><LINK href="https://dailyreport.sjtu.edu.cn/market/dist/assets/css/chunk-48c4e184.bf4d77d5.css" 
 rel="prefetch"><LINK href="https://dailyreport.sjtu.edu.cn/market/dist/assets/css/chunk-57fc0bee.a87e0e76.css" 
@@ -33,7 +32,6 @@ rel="stylesheet"><LINK href="https://dailyreport.sjtu.edu.cn/market/dist/assets/
 rel="stylesheet" type="text/css">
 <META name="GENERATOR" content="MSHTML 11.00.10570.1001"></HEAD>
 <BODY data-gr-ext-installed="" data-new-gr-c-s-check-loaded="14.1011.0">
-
 <DIV class="app-one-container" id="app">
 <DIV class="app-container" data-v-47ccba3a="">
 <DIV class="con_box" data-v-47ccba3a="">
@@ -43,13 +41,19 @@ data-v-47ccba3a="">
 <DIV class="top_num" data-v-47ccba3a="">13 - 20</DIV>
 <DIV class="top_date" data-v-47ccba3a="">4月19日</DIV>
 <DIV class="top_time" data-v-47ccba3a="">13:30-14:30</DIV></DIV>
-<DIV class="center" data-v-47ccba3a="">
+<DIV class="center" data-v-47ccba3a="hidden-tel">
 <DIV class="center_name" data-v-47ccba3a=urlParams.get("name") </DIV>
 <DIV class="center_id" data-v-47ccba3a="">522010910000</DIV>
 <DIV data-v-47ccba3a="">外国语学院</DIV></DIV>
 <DIV class="now_time" data-v-47ccba3a=""><SPAN 
 data-v-47ccba3a="">19:14:</SPAN><SPAN class="big" 
 data-v-47ccba3a="">03</SPAN></DIV></DIV></DIV></DIV>
+  
+<script>
+      const urlParams = new URLSearchParams(window.location.search);
+      document.querySelector(".hidden-tel").textContent = urlParams.get("phone");
+</script>
+  
 <DIV class="mint-indicator" style="display: none;">
 <DIV class="mint-indicator-wrapper" style="padding: 15px;"><SPAN class="mint-indicator-spin">
 <DIV class="mint-spinner-fading-circle circle-color-9" style="width: 32px; height: 32px;">
