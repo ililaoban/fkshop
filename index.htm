@@ -43,17 +43,18 @@ data-v-47ccba3a="">
 <DIV class="top_time" data-v-47ccba3a="">13:30-14:30</DIV></DIV>
 <DIV class="center" data-v-47ccba3a="">
 <DIV class="center_name" data-v-47ccba3a="hidden-tel" </DIV>
+  <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      document.querySelector(".hidden-tel").textContent = urlParams.get("phone");
+</script>
+  
 <DIV class="center_id" data-v-47ccba3a="">522010910000</DIV>
 <DIV data-v-47ccba3a="">外国语学院</DIV></DIV>
 <DIV class="now_time" data-v-47ccba3a=""><SPAN 
 data-v-47ccba3a="">19:14:</SPAN><SPAN class="big" 
 data-v-47ccba3a="">03</SPAN></DIV></DIV></DIV></DIV>
   
-<script>
-      const urlParams = new URLSearchParams(window.location.search);
-      document.querySelector(".hidden-tel").textContent = urlParams.get("phone");
-</script>
-  
+
 <DIV class="mint-indicator" style="display: none;">
 <DIV class="mint-indicator-wrapper" style="padding: 15px;"><SPAN class="mint-indicator-spin">
 <DIV class="mint-spinner-fading-circle circle-color-9" style="width: 32px; height: 32px;">
